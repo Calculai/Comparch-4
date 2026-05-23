@@ -1,0 +1,21 @@
+comparch-4 run summary
+StepBytes: 8388608
+MaxIterations: 0
+MaxRuntimeSec: 600
+
+=== Final Stats (all methods) ===
+
+Method      Iterations LargestBlock RetainedMemory CpuTime                   WallTime Status 
+------      ---------- ------------ -------------- -------                   -------- ------ 
+malloc      115        920.00 MiB   52.11 GiB      57.48s                    61.43s   ok     
+calloc      105        840.00 MiB   43.48 GiB      47.32s                    50.98s   ok     
+realloc     573        4.48 GiB     4.48 GiB       ~599.37s (from last iter) 601.94s  timeout
+malloc+free 587        4.59 GiB     4.59 GiB       ~598.85s (from last iter) 601.35s  timeout
+
+=== Per-method logs ===
+- malloc: C:\code\cppc\comparch-4\logs\malloc.log
+- calloc: C:\code\cppc\comparch-4\logs\calloc.log
+- realloc: C:\code\cppc\comparch-4\logs\realloc.log
+- malloc+free: C:\code\cppc\comparch-4\logs\malloc_plus_free.log
+
+
